@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Injector32.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="GUIComponents\Checkbox.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\ComboBox.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\Font.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\Item.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\NumericBox.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\TextBox.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\TextLabel.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIComponents\Window.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectorWindow.cpp" />
+    <ClCompile Include="Injector.cpp" />
+    <ClCompile Include="GUIComponents\Button.cpp">
+      <Filter>GUIComponents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="GUIComponents\Checkbox.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\ComboBox.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\Font.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\Item.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\NumericBox.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\stdafx.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\TextBox.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\TextLabel.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\Vector2.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIComponents\Window.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectorWindow.h" />
+    <ClInclude Include="Injector.h" />
+    <ClInclude Include="GUIComponents\Button.h">
+      <Filter>GUIComponents</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GUIComponents">
+      <UniqueIdentifier>{a6149679-f66c-461e-b24d-c379bf7371af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

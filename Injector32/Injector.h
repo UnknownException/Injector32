@@ -1,0 +1,46 @@
+#pragma once
+
+class Injector {
+public:
+	enum InjectionResult {
+		INJECTION_OK,
+
+		EXECUTABLEPATH_NOTSET,
+	
+		EXECUTABLE_INVALID,
+
+		PROCESS_ALREADYINJECTED,
+		PROCESS_CREATEPROCESS_FAILED,
+		PROCESS_GETPROCADDRESS_FAILED,
+		PROCESS_RESUMETHREAD_FAILED,
+
+		LIBRARYPATH_NOTSET,
+		LIBRARYPATH_VIRTUALALLOCEX_FAILED,
+		LIBRARYPATH_WRITEPROCESSMEMORY_FAILED,
+		LIBRARYPATH_VIRTUALFREEEX_FAILED,
+
+		LIBRARY_INVALID,
+		LIBRARY_CREATEREMOTETHREAD_FAILED,
+		LIBRARY_RESUMETHREAD_FAILED,
+		LIBRARY_WAITFORSINGLEOBJECT_FAILED
+	};
+
+private:
+	LPWSTR executablePath;
+	LPWSTR libraryPath;
+
+	PROCESS_INFORMATION processInformation;
+
+public:
+	Injector();
+	virtual ~Injector();
+
+	void SetExecutablePath(LPCWSTR path);
+	void SetLibraryPath(LPCWSTR path);
+
+	InjectionResult Inject();
+	bool Wait();
+
+private:
+	InjectionResult Validate();
+};
